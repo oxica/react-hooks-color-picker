@@ -9,8 +9,8 @@ export default function ColorPicker({ options }) {
   };
 
   return (
-    <div className="container">
-      <h2 className="title">Color Picker</h2>
+    <div className={s.container}>
+      <h2 className={s.title}>Color Picker</h2>
       <p>Color: {options[activeOptionIdx].label}</p>
       <div>
         {options.map(({ label, color }, index) => (
