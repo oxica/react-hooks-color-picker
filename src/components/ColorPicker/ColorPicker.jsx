@@ -8,12 +8,10 @@ export default function ColorPicker({ options }) {
     return index === activeOptionIdx ? s.active : s.option;
   };
 
-  const { label } = options[activeOptionIdx];
-
   return (
     <div className="container">
       <h2 className="title">Color Picker</h2>
-      <p>Color: {label}</p>
+      <p>Color: {options[activeOptionIdx].label}</p>
       <div>
         {options.map(({ label, color }, index) => (
           <button
